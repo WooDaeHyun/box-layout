@@ -1,3 +1,9 @@
+import BoxContainer from "@/components/BoxContainer";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <BoxContainer />
+    </main>
+  );
 }

@@ -11,8 +11,7 @@
 
   .app-layout {
     width: 600px;
-    height: 600px;
-    margin: 15% 35%;
-    background-color: black;
+    height: 100%;
+    margin: 0 auto !important;
   }
 }

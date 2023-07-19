@@ -15,9 +15,7 @@ module.exports = {
         red: "#d63031",
         blue: "#0984e3",
         mint: "#81ecec",
-      },
-      width: {
-        half: "50%",
+        yellow: "#fdcb6e",
       },
     },
   },
