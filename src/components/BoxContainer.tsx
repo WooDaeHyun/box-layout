@@ -2,14 +2,14 @@ import Box from "./Box";
 
 const BoxContainer = () => {
   return (
-    <div className="w-[600px] h-[600px] mt-[300px] relative table border-collapse">
+    <div className="w-[600px] h-[600px] relative m-auto">
       <Box color="bg-pink" moveDirection="leftTop">
         <Box color="bg-white" moveDirection="leftTop" />
       </Box>
       <Box color="bg-black" moveDirection="rightTop">
         <Box color="bg-mint" moveDirection="rightBottom" />
       </Box>
-      <Box color="bg-black" moveDirection="leftBottom"></Box>
+      <Box color="bg-black" moveDirection="leftBottom" />
       <Box color="bg-yellow" moveDirection="rightBottom" />
       <Box color="bg-green">
         <Box color="bg-red" moveDirection="left" />

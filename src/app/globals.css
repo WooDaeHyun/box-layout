@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-  }
-
-  body {
-  }
-
   .app-layout {
     width: 600px;
-    height: 100%;
-    margin: 0 auto !important;
+    margin: 100px auto !important;
   }
 }

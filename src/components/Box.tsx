@@ -45,7 +45,7 @@ const getMoveDirection = (moveDirection: string) => {
 };
 
 const BASE_BOX_STYLE =
-  " border-[2px] border-black w-2/4 h-2/4 top-1/4 left-1/4 absolute table-cell";
+  "border-[2px] border-black w-[49.2%] h-[49.2%] top-1/4 left-1/4 absolute box-content";
 
 const Box = ({ color, moveDirection = "center", children }: BoxProps) => {
   const computedStyle = useMemo(() => {
