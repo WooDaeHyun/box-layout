@@ -1,3 +1,11 @@
+import { ReactNode, useMemo } from "react";
+
+interface BoxProps {
+  color: string;
+  moveDirection?: string;
+  children?: ReactNode;
+}
+
 const getMoveDirection = (moveDirection: string) => {
   switch (moveDirection) {
     case "leftTop": {
@@ -31,10 +39,17 @@ const getMoveDirection = (moveDirection: string) => {
 };
 
 const BASE_BOX_STYLE =
-  "box-border border-2 border-black absolute w-2/4 h-2/4 top-1/4 left-1/4 bg-red";
+  "box-border border-2 border-black absolute w-2/4 h-2/4 top-1/4 left-1/4";
 
-const Box = ({}) => {
-  return <div className={BASE_BOX_STYLE}></div>;
+const Box = ({ color, moveDirection = "center", children }: BoxProps) => {
+  const computedStyle = useMemo(() => {
+    const boxBgColor = color;
+    const boxLoaction = getMoveDirection(moveDirection);
+
+    return [boxBgColor, boxLoaction].join(" ");
+  }, [color, moveDirection]);
+
+  return <div className={`${BASE_BOX_STYLE} ${computedStyle}`}>{children}</div>;
 };
 
 export default Box;
